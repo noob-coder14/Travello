@@ -7,9 +7,7 @@ import InputBase from '@material-ui/core/InputBase';
 import { alpha, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
-import blueGrey from '@material-ui/core/colors/blueGrey';
-
-const primaryNav = blueGrey[300];
+// import useStyles from './styles'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -70,23 +68,23 @@ const useStyles = makeStyles((theme) => ({
 //     palette
 // })
 
-export default function SearchAppBar() {
+export default function Header() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color={primaryNav}>
+      <AppBar position="static">
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
             aria-label="open drawer"
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            Trip Advisor
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
