@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
       display: 'block',
     },
   },
+  para: {
+  
+  },
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
@@ -31,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: alpha(theme.palette.common.white, 0.25),
     },
     marginLeft: 0,
-    width: '100%',
+    width: '70%',
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing(1),
       width: 'auto',
@@ -85,6 +88,9 @@ export default function Header() {
           </IconButton> */}
           <Typography className={classes.title} variant="h6" noWrap>
             Trip Advisor
+          </Typography>
+          <Typography className={classes.para} variant="p" noWrap>
+            Explore More Locations
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
