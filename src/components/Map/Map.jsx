@@ -7,7 +7,7 @@ import Rating from '@material-ui/lab';
 
 import useStyles from './styles';
 
-function Map({setCoordinates,setBounds,coordinates}) {
+function Map({setCoordinates,setBounds,coordinates,places}) {
     const classes = useStyles();
     const isMobile = useMediaQuery('(min-width: 600px)');
 
@@ -21,7 +21,7 @@ function Map({setCoordinates,setBounds,coordinates}) {
             margin={[50,50,50,50]}
             // options={''}
             onChange={(e)=>{
-                console.log(e);
+                // console.log(e);
                 setCoordinates({lat: e.center.lat, lng: e.center.lng});
                 setBounds({ ne: e.marginBounds.ne, sw: e.marginBounds.sw})
             }}

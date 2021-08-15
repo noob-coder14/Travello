@@ -89,7 +89,7 @@ export default function Header() {
           <Typography className={classes.title} variant="h6" noWrap>
             Trip Advisor
           </Typography>
-          <Typography className={classes.para} variant="p" noWrap>
+          <Typography className={classes.para} variant="body1" noWrap>
             Explore More Locations
           </Typography>
           <div className={classes.search}>
